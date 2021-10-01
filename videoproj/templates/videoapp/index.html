@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block title %} | Welcome {% endblock %}
+
+{% block content %}
+
+<!-- Header section
+================================================== -->
+<section id="header" class="header-one">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+
+              <h1 class="wow fadeIn" data-wow-delay="0.6s">Director - Producer - Filmmaker</h1>
+              <h3 class="wow fadeInUp" data-wow-delay="0.8s">Roger Okamoto</h3>
+							<br>
+							<br>
+							<button type="button" class="filled-button"><a href="#intro-reel">Watch Reel</a></button>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Intro Reel section
+================================================== -->
+
+<section id="intro-reel">
+
+<div class="container">
+    <div class="row">
+
+
+			<div class="intro-reel" >
+					<iframe class="displayed" style="width:900px; margin:40px 10px 0 160px;" src="https://player.vimeo.com/video/338802155" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+		</div>
+</div>
+
+</section>
+
+
+<!-- Portfolio section
+================================================== -->
+<section id="portfolio">
+   <div class="container">
+      <div class="row">
+
+         <div class="col-md-12 col-sm-12">
+
+               <!-- iso section -->
+               <div class="iso-section wow fadeInUp" data-wow-delay="0.6s">
+
+                  <ul class="filter-wrapper clearfix">
+                           <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".graphic">Graphic</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".template">Web template</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".photoshop">Photoshop</a></li>
+                        <li><a href="#" class="opc-main-bg" data-filter=".branding">Branding</a></li>
+                        </ul>
+
+                        <!-- iso box section -->
+                        <div class="iso-box-section wow fadeInUp" data-wow-delay="0.5s">
+                           <div class="iso-box-wrapper col4-iso-box">
+
+                              <div class="iso-box photoshop branding col-md-4 col-sm-6">
+
+                                 <div class="portfolio-thumb">
+                                    <!--img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio"-->
+																		<iframe src="https://player.vimeo.com/video/391098497" width="200" height="500" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+																							<h2 style="font-size:18px;font-weight:bold"></h2>
+                                                <a href="single_project.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project One</h2>
+
+                                             </div>
+                                       </div>
+                                 </div>
+
+                              </div>
+
+                              <div class="iso-box graphic template col-md-4 col-sm-6">
+
+                                 <div class="portfolio-thumb">
+																	 <!-- The video tag: -->
+
+																	<img src="{% static 'images/portfolio-img2.jpg' %}" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+																				 {% for project in projects %}
+                                          <div class="portfolio-item">
+                                  			 				<a href="{% url 'videoapp:DetailView' project.slug %}">{{project.title}}<i class="fa fa-link"></i></a>
+																								  <h2>{{project.title}}</h2>
+                                             </div>
+																				{% endfor %}
+                                       </div>
+                                 </div>
+
+                              </div>
+
+                              <div class="iso-box template graphic col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project Three</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic template col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project Four</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project Five</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box graphic branding col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project Six</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+
+                            </div>
+                        </div>
+
+               </div>
+
+         </div>
+
+      </div>
+   </div>
+</section>
+
+<!-- Footer section
+================================================== -->
+{% endblock %}

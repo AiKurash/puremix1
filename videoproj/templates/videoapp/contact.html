@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {{project.title}} {% endblock %}
+
+{% block content %}
+
+
+<!-- Header section
+================================================== -->
+<!--section id="header" class="header-four">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+            	<div class="header-thumb">
+              		 <h1 class="wow fadeIn" data-wow-delay="0.6s">Contact Us</h1>
+              		 <h3 class="wow fadeInUp" data-wow-delay="0.9s">Vestibulum at aliquam lorem</h3>
+           		</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact section
+================================================== -->
+<section id="contact">
+   <div class="container">
+      <div class="row">
+
+         <!--div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.3s">
+           	<div class="google_map">
+  				        <div id="map-canvas"></div>
+  			    </div>
+		      </div-->
+
+		<div class="wow fadeInUp col-md-8 col-sm-12" data-wow-delay="1.6s" >
+			<h1>Let's work together!</h1>
+			<div class="contact-form">
+        <div class="center">
+				<form id="contact-form" method="post" action="#">
+					<input name="name" type="text" class="form-control" placeholder="Your Name" required>
+					<input name="email" type="email" class="form-control" placeholder="Your Email" required>
+					<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+					<div class="contact-submit">
+						<input type="submit" class="form-control submit" value="Send a message">
+					</div>
+				</form>
+      </div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+
+   </div>
+   <br>
+   <br>
+   <br>
+</section>
+
+
+<!-- Footer section
+================================================== -->
+{% endblock %}

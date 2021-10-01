@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+
+Template 2082 Pure Mix
+
+http://www.tooplate.com/view/2082-pure-mix
+
+-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Site title
+   ================================================== -->
+	<title>Pure Mix - HTML CSS Template</title>
+
+	<!-- Bootstrap CSS
+   ================================================== -->
+
+  <link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.min.css' %}">
+	<!-- Animate CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+	<!-- Font Icons CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+
+	<!-- Main CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Google web font
+   ================================================== -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
+
+	<div class="sk-spinner sk-spinner-pulse"></div>
+
+</div>
+
+
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Pure Mix</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                      <ul id="nav-menu">
+                        <li><a href="{% url 'videoapp:home' %}">Home</a></li>
+                        <li><a href="{% url 'videoapp:about' %}">About</a></li>
+                        <li><a href="{% url 'videoapp:photos' %}">Photos</a></li>
+                        <li><a href="{% url 'contactpage:contactView' %}">Contact</a></li>
+											</ul>
+												<!--ul class="navigation-menu nav navbar-nav navbars" id="nav-menu">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Reel</a></li>
+                                    <li data-menuanchor="slide02"><a href="#slide02">About Me</a></li>
+                                    <li data-menuanchor="slide03"><a href="#slide03">Services</a></li>
+                                    <li data-menuanchor="slide04"><a href="#slide04">My Skills</a></li>
+                                    <li data-menuanchor="slide05"><a href="#slide05">My Work</a></li>
+                                    <li data-menuanchor="slide06"><a href="#slide06">Testimonials</a></li>
+                                    <li data-menuanchor="slide07"><a href="#slide07">Contact Me</a></li>
+                                </ul-->
+
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+  {% block content %} {% endblock %}
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">Copyright © 2016 Your Company Name - Designed by Tooplate</p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+					<li><a href="#" class="fa fa-behance"></a></li>
+					<li><a href="#" class="fa fa-google-plus"></a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+
+<!-- Javascript
+================================================== -->
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/isotope.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/imagesloaded.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+
+
+</body>
+</html>
