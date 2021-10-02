@@ -420,7 +420,7 @@ a.icon {
 .header-one, .header-two,
 .header-three, .header-four,
 .header-five {
-  height: 42vh !important;
+  height: 82vh !important;
   min-height: 420px;
   padding-top: 120px !important;
 }
