@@ -426,14 +426,14 @@ a.icon {
 }
 
 .header-one {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/header-bg-2.jpg') no-repeat;
   height: 60vh !important;
   min-height: 520px;
   padding-top: 150px !important;
 	margin-top: 100px;
 }
 .header-two {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/header-bg-2.jpg') no-repeat;
 }
 .header-three {
   background: url('../images/header-three-bg.jpg') no-repeat;
