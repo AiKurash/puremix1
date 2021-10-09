@@ -41,6 +41,12 @@ h1 {
   font-weight: 700;
 }
 
+.header-one .wow h1 h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 h2 {
   color: #ffffff;
   font-size: 1rem;
