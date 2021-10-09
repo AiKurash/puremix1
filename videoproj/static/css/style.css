@@ -434,7 +434,7 @@ a.icon {
 }
 
 .header-one {
-  background: url('../images/header-bg-2.jpg') no-repeat;
+  background: url('../images/header-bg.jpg') no-repeat;
 	background-size: auto;
 	background-repeat: no-repeat;
   background-attachment: fixed;
@@ -442,7 +442,7 @@ a.icon {
 	height: 60vh !important;
   min-height: 520px;
   padding-top: 150px !important;
-	margin-top: 100px;
+
 }
 
 .header-one h1 h3{
