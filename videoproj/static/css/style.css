@@ -403,6 +403,8 @@ a.icon {
   padding-bottom: 100px;
 }
 
+
+
 #header .header-thumb {
   background: #ffffff;
   border: 10px solid #f9f9f9;
@@ -435,6 +437,11 @@ a.icon {
   min-height: 520px;
   padding-top: 150px !important;
 	margin-top: 100px;
+}
+
+.header-one h1 h3{
+	color: white;
+
 }
 .header-two {
   background: url('../images/header-bg-2.jpg') no-repeat;
