@@ -191,7 +191,7 @@ nav a {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 20px 0 0;
+  padding: 6px 0 0;
 }
 
 nav ul {
