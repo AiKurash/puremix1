@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('videoapp.urls', namespace='videoapp')),
     path('', include('contactpage.urls', namespace='contactpage')),
+    path('', include('imagegallery.urls', namespace='imagegallery')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

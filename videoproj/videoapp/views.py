@@ -41,5 +41,8 @@ def About(request):
 def Photos(request):
     return render(request, 'videoapp/blog.html')
 
+
+
+
 #def Contact(request):
     #return render(request, 'videoapp/contact.html')
