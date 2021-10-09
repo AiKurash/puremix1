@@ -439,7 +439,7 @@ a.icon {
 	background-repeat: no-repeat;
   background-attachment: fixed;
 	background-position: center bottom;
-	height: 60vh !important;
+	height: 80vh !important;
   min-height: 520px;
   padding-top: 150px !important;
 
@@ -986,6 +986,7 @@ footer {
 
 #header button.filled-button {
 	color: black;
+	font-style: bold;
 	width: 180px;
 	height: 50px;
 	background-color: #a3bfbf;
@@ -1006,7 +1007,7 @@ footer {
 	border-width: 5px;
 
   position:relative;
-  right: -90px;
+  right: -80px;
 }
 
 
