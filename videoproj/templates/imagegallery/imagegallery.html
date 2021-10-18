@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Welcome to Blog
+    {% endblock %}
+
+    {% block content %}
+
+    <section id="header" >
+
+    </section>
+
+    <div class="content-wrapper">
+        <div class="inner-container container">
+            <div class="row">
+                <div class="section-header col-md-12">
+                    <h2>Image Gallery</h2>
+                    <span>Subtitle Goes Here</span>
+                </div> <!-- /.section-header -->
+            </div> <!-- /.row -->
+          <div class="row">
+            <div class="blog-masonry masonry-true">
+              {% for results in imggal %}
+              <div class="post-masonry col-md-4 col-sm-6">
+                          <div class="blog-thumb">
+                                  <img class="card-img-top" src="{{results.image.url}}" alt="Card image cap" width="200" height="340">
+                                    <div class="overlay-b">
+                                        <div class="overlay-inner">
+
+                                        </div>
+                                    </div>
+                          </div>
+                          <div class="blog-body">
+                          <div class="box-content">
+
+                                    <h2 style="font-size:18px;font-weight:bold">{{results.imgtitle}}</h2>
+                                    <h2><a href="project-details.html">{{results.imgdesc}}</a></h2>
+                                    <p><a href="http://www.templatemo.com/preview/templatemo_423_artcore">Artcore</a></p>
+                          </div> <!-- /.project-item -->
+                        </div>
+                      </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+    {% endblock %}

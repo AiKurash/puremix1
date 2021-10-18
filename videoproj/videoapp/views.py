@@ -39,7 +39,10 @@ def About(request):
     return render(request, 'videoapp/about.html')
 
 def Photos(request):
-    return render(request, 'videoapp/blog_01.html')
+    return render(request, 'videoapp/blog.html')
+
+
+
 
 #def Contact(request):
     #return render(request, 'videoapp/contact.html')

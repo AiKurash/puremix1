@@ -9,4 +9,5 @@ urlpatterns = [
     path('about/', views.About, name='about'),
     path('photos/', views.Photos, name='photos'),
     path('<slug:slug>/', views.DetailView, name='DetailView'),
+
 ]

@@ -41,6 +41,12 @@ h1 {
   font-weight: 700;
 }
 
+.header-one .wow h1 h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 h2 {
   color: #ffffff;
   font-size: 1rem;
@@ -191,7 +197,7 @@ nav a {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 20px 0 0;
+  padding: 6px 0 0;
 }
 
 nav ul {
@@ -403,6 +409,8 @@ a.icon {
   padding-bottom: 100px;
 }
 
+
+
 #header .header-thumb {
   background: #ffffff;
   border: 10px solid #f9f9f9;
@@ -427,12 +435,22 @@ a.icon {
 
 .header-one {
   background: url('../images/header-bg.jpg') no-repeat;
-  height: 60vh !important;
+	background-size: auto;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-position: center bottom;
+	height: 80vh !important;
   min-height: 520px;
   padding-top: 150px !important;
+
+}
+
+.header-one h1 h3{
+	color: white;
+
 }
 .header-two {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/header-bg-2.jpg') no-repeat;
 }
 .header-three {
   background: url('../images/header-three-bg.jpg') no-repeat;
@@ -968,6 +986,7 @@ footer {
 
 #header button.filled-button {
 	color: black;
+	font-style: bold;
 	width: 180px;
 	height: 50px;
 	background-color: #a3bfbf;
@@ -988,7 +1007,7 @@ footer {
 	border-width: 5px;
 
   position:relative;
-  right: -160px;
+  right: -80px;
 }
 
 

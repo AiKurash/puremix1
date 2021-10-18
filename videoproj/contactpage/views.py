@@ -16,7 +16,7 @@ def contactView(request):
     else:
         form = ContactForm(request.POST)
         if form.is_valid():
-            subject = form.cleaned_data['from_email']
+            subject = form.cleaned_data['email']
             message = form.cleaned_data['message']
             from_email = 'rogervideo@elysiancoder.com'
             to_email = ['bewater475@gmail.com']

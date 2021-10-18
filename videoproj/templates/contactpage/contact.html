@@ -6,6 +6,8 @@
 {% block content %}
 
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+
 <!-- Header section
 ================================================== -->
 <!--section id="header" class="header-four">
@@ -37,15 +39,15 @@
 		      </div-->
 
 		<div class="box-content col-md-12">
-			<h1>Let's work together!</h1>
+			<h1>Contact Me</h1>
 			<div class="contact-form">
         <div class="center">
         <form method="post">
           {% csrf_token %}
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-8 col-sm-12">
 
-              <table>{{ form.as_table }}</table>
+              <table>{{ form }}</table>
 
                 <br>
 
