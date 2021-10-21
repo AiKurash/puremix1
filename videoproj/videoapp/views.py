@@ -15,7 +15,7 @@ def DetailView(request, slug):
 
     context = {'project_detail' : project_detail,}
 
-    return render(request , 'videoapp/single_project.html', context)
+    return render(request , 'videoapp/single_project01.html', context)
 
 
 #class PostList(generic.ListView):
